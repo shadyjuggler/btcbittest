@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { CurrencyBalanceData } from "../types/types";
 import { TableAPI } from "../types/enums";
-import { useMediaQuery } from "@uidotdev/usehooks";
 
 import { SlTrash } from "react-icons/sl";
 
@@ -19,7 +18,6 @@ export const CurrencyTable: React.FC = () => {
 	const [isLoading, setLoading] = useState<boolean>(true);
 	const [currencyData, setCurrencyData] = useState<CurrencyBalanceData | undefined>(undefined);
 	const [currencySearch, setCurrencySearch] = useState<string>();
-	// const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
 	const isSmallDevice = () => window.innerWidth <= 768;
 
 	useEffect(() => {

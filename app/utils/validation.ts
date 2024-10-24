@@ -2,13 +2,10 @@ import { Dispatch } from "react";
 import { RegFormData, LogFormData, CurrencyBalanceData } from "../types/types";
 import { SetStateAction } from "react";
 
-export const validateForm = (
-    setErrorMessage: Dispatch<SetStateAction<string | undefined>>,
-    formData?: RegFormData | LogFormData
-  ) => {
+export const validateForm = ( setErrorMessage: Dispatch<SetStateAction<string | undefined>>, formData?: RegFormData | LogFormData) => {
     let formIsValid = true;
-  
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
     if (!formData?.email) {
       setErrorMessage("Email is required");
       formIsValid = false;
