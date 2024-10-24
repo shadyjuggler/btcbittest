@@ -21,7 +21,7 @@ export const HomePage: React.FC = () => {
                         Please register or login to see balance
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
-                        <a href="https://github.com/shadyjuggler" target="_blank" className="text-sm font-semibold leading-6 text-gray-900">
+                        <a href="https://github.com/shadyjuggler/btcbittest" target="_blank" className="text-sm font-semibold leading-6 text-gray-900">
                             Please find the soruce code here... <span aria-hidden="true">→</span>
                         </a>
                     </div>
